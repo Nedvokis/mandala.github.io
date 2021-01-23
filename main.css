@@ -129,18 +129,6 @@ button {
   background-color: #fff;
 }
 
-/* -------------- FONTS CSS -------------- */
-
-@font-face {
-  font-family: RobotoCondensed;
-  src: url("/fonts/RobotoCondensed-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: RobotoCondensed;
-  src: url("/fonts/RobotoCondensed-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-
 /* -------------- MAIN CSS -------------- */
 body {
   background-color: #d6e5ff;
