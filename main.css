@@ -1,0 +1,268 @@
+/* -------------- RESET CSS -------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  background-color: #fff;
+}
+
+/* -------------- FONTS CSS -------------- */
+
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("/fonts/RobotoCondensed-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("/fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+/* -------------- MAIN CSS -------------- */
+body {
+  background-color: #d6e5ff;
+}
+.content {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 1366px;
+  align-items: center;
+  justify-content: space-between;
+}
+.interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.smart-text {
+  margin-top: 60px;
+  min-height: 100px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffd5d4;
+}
+.text {
+  cursor: pointer;
+  font-size: 25px;
+  font-family: RobotoCondensed;
+  text-align: center;
+}
+.button {
+  user-select: none;
+  width: fit-content;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 30px;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: RobotoCondensed;
+  border-radius: 8px;
+}
+.button:active {
+  border: none;
+  outline: none;
+}
+.button:focus {
+  border: none;
+  outline: none;
+}
+.button:hover {
+  color: #fff;
+  background-color: #5e5e5e;
+}
+.link-display {
+  min-height: 100px;
+  min-width: 300px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffd5d4;
+}
+.headline {
+  margin-bottom: 12px;
+  font-family: RobotoCondensed;
+}
+.link {
+  width: inherit;
+  height: inherit;
+  text-decoration: none;
+  color: #000;
+  font-family: RobotoCondensed;
+  text-align: center;
+}
+.mandala {
+  display: flex;
+  position: relative;
+}
+.mandala video {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 90%;
+  }
+  .smart-text {
+    margin-top: 20px;
+    min-height: 300px;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .link-display {
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 12px;
+    white-space: pre-line;
+  }
+}
