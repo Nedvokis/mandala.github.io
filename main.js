@@ -534,7 +534,6 @@ function getRandomInt(max) {
 function changeText() {
   var someNumber = getRandomInt(textItems.length);
   text[0].innerHTML = textItems[someNumber].text;
-  link[0].innerHTML = textItems[someNumber].url;
   link[0].href = textItems[someNumber].url;
 }
 

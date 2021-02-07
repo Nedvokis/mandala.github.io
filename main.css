@@ -247,14 +247,31 @@ body {
   bottom: 0;
   left: 0;
 }
+.mandala._desc {
+  display: flex;
+}
+.mandala._mobile {
+  display: none;
+}
 
 @media screen and (max-width: 820px) {
+  .content {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .container {
     width: 90%;
   }
+  .interface {
+    flex-direction: column-reverse;
+  }
   .smart-text {
     margin-top: 20px;
+    margin-bottom: 0;
     min-height: 300px;
+  }
+  .button {
+    margin-top: 20px;
   }
   .text {
     font-size: 18px;
@@ -264,5 +281,21 @@ body {
     width: 90%;
     font-size: 12px;
     white-space: pre-line;
+  }
+  .mandala {
+    display: flex;
+    position: relative;
+  }
+  .mandala video {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .mandala._desc {
+    display: none;
+  }
+  .mandala._mobile {
+    display: flex;
   }
 }
