@@ -161,10 +161,11 @@ body {
   align-items: center;
 }
 .container {
-  min-height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   width: 1366px;
+  justify-content: center;
   align-items: center;
   row-gap: 20px;
 }
@@ -280,7 +281,7 @@ body {
     font-size: 18px;
   }
   .link-display {
-    margin-bottom: 10px;
+    margin: 30px 0;
     width: 90%;
     font-size: 12px;
     white-space: pre-line;
